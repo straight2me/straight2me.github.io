@@ -1,0 +1,213 @@
+
+* {
+	margin:0;
+	padding:0;
+	font-family: FontAwesome;
+  color: #4d4d4d;
+  text-rendering: optimizelegibility;
+}
+html, body  {
+	background: url(../images/siteBackground.png) repeat;
+	height: 100%;
+}
+a {
+	color:#1fc7eb;
+	text-decoration:none;
+	outline-style: none;
+}
+a:focus {
+    outline: 0 none!important;
+}
+p {
+	line-height:140%;	
+}
+.container-narrow {
+	overflow: hidden;
+	margin: 0 auto;
+	max-width: 960px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	box-shadow: 0px 6px 4px 0px #222;
+	background: url(../images/pageBackground.jpg) repeat;
+	min-height: 100%;
+	min-width: 960px;
+	margin-bottom: -58px;
+}
+.container-narrow:after {
+  content: "";
+  display: block;
+}
+footer, .container-narrow:after {
+  height: 26px; 
+}
+footer {
+	height: 26px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 10px;
+	max-width: 960px;
+	border-top:1px solid #bbbbbb;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	background: #e1e1e1;
+}
+header {
+	border-bottom:1px solid #bbbbbb;
+	margin-bottom: 6px;
+	background: url(../images/headerBackground.jpg) repeat-x;
+	background-size: auto 100%;
+	padding-top: 8px;
+	padding-bottom: 4px;
+}
+.logo img {
+	height: 90px;
+	max-width: 100%;
+}
+.page {
+	position: relative;
+	overflow: hidden;
+}
+.panel{
+	position: absolute;
+	margin-top: -150%;
+	opacity: 0;
+	z-index:2;
+	-webkit-transition: opacity .6s ease-in-out;
+	-moz-transition: opacity .6s ease-in-out;
+	-o-transition: opacity .6s ease-in-out;
+	-ms-transition: opacity .6s ease-in-out;
+	transition: opacity .6s ease-in-out;
+}
+.panelShow{
+	position: static;
+	opacity: 1;
+	margin-top: 0%;
+}
+/********* begin NAV ********/
+/*------------------------------------------------------------*/
+
+.navcontainer ul {
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	overflow: hidden;
+	padding: 18px 0;
+	margin-top: 5%;
+	list-style-type: none;
+	background:url(../images/menuGradient.jpg) repeat-x;
+	color: #ddd;
+	box-shadow: 0px 3px 4px 0px #828282;
+}
+.navcontainer li { 
+	display: inline; 
+}
+
+.navcontainer li a {
+	color: #666;
+	padding: 20px 10px;
+	text-shadow: none;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:18px;
+	font-weight: 400;
+}
+.navcontainer li a:hover {
+	background:url(../images/hoverMenuGradient.jpg) repeat-x;
+	color: #888;
+}
+#active a {
+	background:url(../images/activeMenuGradient.jpg) repeat-x;
+	color: #fff;
+}
+/*------------------------------------------------------------*/
+/********* end NAV ********/
+/*------------------------------------------------------------*/
+/********* begin SCREENSHOT ********/
+/*------------------------------------------------------------*/
+.screenshot{
+	position: relative;
+	padding: 15px;
+	padding-top: 10px;
+}
+#in{
+	position: relative;
+	border-radius: 7px;
+	box-shadow: 0px 6px 4px 0px #828282;
+	overflow: hidden;
+}
+.screenshot img{
+	-webkit-transition: opacity .6s ease-in-out;
+	-moz-transition: opacity .6s ease-in-out;
+	-o-transition: opacity .6s ease-in-out;
+	-ms-transition: opacity .6s ease-in-out;
+	transition: opacity .6s ease-in-out;
+}
+.screenshot a #hov {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	opacity: 0.1;
+}
+.screenshot a:hover #hov {
+	opacity: 1;
+}
+/*------------------------------------------------------------*/
+/********* end SCREENSHOT ********/
+/*------------------------------------------------------------*/
+.span4 {
+	margin-right: -22px;
+	padding-right: 10px;
+	padding-left: 10px;
+	min-width: 33%;
+}
+.col { 
+	border-right: 1px solid #BBBBBB;
+  box-shadow: 1px 0px #ffffff;
+}
+.topic {
+	display: inline;
+}
+.topic img {
+	float: left;
+	max-width: 72px;
+	padding-right: 10px;
+}
+.topic p {
+	font-size: x-large;
+	margin-top: 30px;
+	font-weight: 480;
+}
+.content {
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+.content p {
+	padding-left: 15px;
+	padding-right: 15px;
+	color: #222;
+	font-weight: 400;
+}
+.content h3 {
+	font-size: x-large;
+	border-bottom:1px solid #999;
+	width: 50%;
+	font-weight: 200;
+}
+.content h4 {
+	padding-top: 15px;
+	border-bottom:1px dashed #999;
+	width: 25%;
+	text-transform:uppercase;
+	font-weight: 400;
+}
+footer p {
+	text-align:center;
+	color: #444;
+	font-family: arial;
+}
+.clearfloat { 
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
